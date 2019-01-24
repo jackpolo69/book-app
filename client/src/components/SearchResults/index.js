@@ -1,19 +1,19 @@
 import React from "react";
 import "./style.css";
 
-function ResultsCard(props)  {
+function ResultsCard(props) {
     return (
-        <div className="ResultsCard row" id={props.title+" Card"}>
+        <div className="ResultsCard row" id={props.title + " Card"}>
             <div className="ImageDiv col-2">
-                <img src={props.image} alt={"Image of"+props.title}></img>
+                <img src={props.image} alt={"Image of" + props.title}></img>
             </div>
             <div className="InfoDiv col-9">
                 <div className="row">
                     <h2 className="col-8">
-                        {props.title} 
+                        {props.title}
                     </h2>
                     <h3 className="col-4">
-                        {props.author}    
+                        {props.author}
                     </h3>
                 </div>
                 <p className="ResultDescription">
@@ -23,7 +23,7 @@ function ResultsCard(props)  {
             <div className="ResultOptions col-1">
                 <a href={props.link}>
                     <button className="ViewMore ResultOption">
-                        View More    
+                        View More
                     </button>
                 </a>
                 <button className="SaveResult ResultOption" id={props.id} onClick={(event) => props.saveBook(event)}>
@@ -34,31 +34,31 @@ function ResultsCard(props)  {
     );
 };
 
-function ResultsWrapper(props)   {
+function ResultsWrapper(props) {
     console.log(props);
     return (props.results.length === 0) ? (
         <div id="ResultsWrapper">
             <h1> Search Results </h1>
         </div>
-    ) : (   
-        <div id="ResultsWrapper">
-            <h1> Search Results </h1>
-            {props.results.map((book) =>  {
-                return (
-                    <ResultsCard 
-                        key={book.id}
-                        id={book.id}
-                        image={book.image}
-                        title={book.title}
-                        author={book.authors}
-                        description={book.description}
-                        link={book.previewLink}
-                        saveBook={props.saveBook}
-                    />
-                );
-            })}
-        </div>
-    );
+    ) : (
+            <div id="ResultsWrapper">
+                <h1> Search Results </h1>
+                {props.results.map((book) => {
+                    return (
+                        <ResultsCard
+                            key={book.id}
+                            id={book.id}
+                            image={book.image}
+                            title={book.title}
+                            author={book.authors}
+                            description={book.description}
+                            link={book.previewLink}
+                            saveBook={props.saveBook}
+                        />
+                    );
+                })}
+            </div>
+        );
 };
 
 export default ResultsWrapper;

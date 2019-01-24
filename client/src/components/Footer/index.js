@@ -3,9 +3,13 @@ import "./style.css";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <span>Copywrite 2019 - Sue J. Stevens </span>
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span is="copyright" class="text-muted">&copy; Copyright 2019 Sue J.  Stevens</span>
+      </div>
     </footer>
+
   );
 }
 
