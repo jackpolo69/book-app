@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import { Col, Row, Container } from "../components/Grid";
+import { Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import SearchDiv from "../components/SearchDiv";
 import SearchResults from "../components/SearchResults";
@@ -35,7 +35,7 @@ class SearchBooks extends Component {
           authors: result.volumeInfo.authors,
           image: result.volumeInfo.imageLinks.thumbnail,
           description: result.volumeInfo.description,
-          link: result.volumeInfo.previewLink
+          link: result.volumeInfo.infoLink
         };
         return book;
       });
