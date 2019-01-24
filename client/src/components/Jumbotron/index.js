@@ -6,7 +6,7 @@ function Jumbotron({ children }) {
     <div
       className="jumbotron jumbotron-fluid d-flex align-items-center"
     >
-    <div class="container text-center">
+    <div className="container text-center">
         {children}
     </div>
     </div>

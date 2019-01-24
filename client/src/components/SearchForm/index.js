@@ -3,7 +3,7 @@ import "./style.css";
 
 function SearchForm({ children }) {
   return (
-    <div class="container">
+    <div className="container">
       <form className="form-inline">
         {children}
       </form>

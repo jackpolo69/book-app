@@ -20,8 +20,11 @@ function ResultsCard(props) {
                     {props.description}
                 </p>
             </div>
+            <p className="link">
+                   TEsting! {props.infoLink}
+                </p>
             <div className="ResultOptions col-1">
-                <a href={props.link}>
+                <a href={props.link} target="_blank">
                     <button className="ViewMore ResultOption">
                         View More
                     </button>
@@ -35,7 +38,6 @@ function ResultsCard(props) {
 };
 
 function ResultsWrapper(props) {
-    console.log(props);
     return (props.results.length === 0) ? (
         <div id="ResultsWrapper">
             <h1> Search Results </h1>
@@ -52,7 +54,7 @@ function ResultsWrapper(props) {
                             title={book.title}
                             author={book.authors}
                             description={book.description}
-                            link={book.previewLink}
+                            link={book.link}
                             saveBook={props.saveBook}
                         />
                     );

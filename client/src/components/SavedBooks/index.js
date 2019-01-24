@@ -2,7 +2,6 @@ import React from "react";
 import "./style.css";
 
 function SavedCard(props) {
-  console.log(props);
   return (
     <div className="SavedCard row" id={props.id + "Card"}>
       <div className="ImageDiv col-2">
@@ -22,7 +21,7 @@ function SavedCard(props) {
         </p>
       </div>
       <div className="SavedOptions col-1">
-        <a href={props.link}>
+        <a href={props.link} target="_blank">
           <button className="ViewMore SavedOption">
             View More
           </button>
@@ -36,14 +35,13 @@ function SavedCard(props) {
 };
 
 function SavedBooks(props) {
-  console.log(props);
   return (props.saved.length === 0) ? (
     <div id="SavedBooks">
       <h1> 0 Saved Results </h1>
     </div>
   ) : (
       <div id="SavedBooks">
-        <h1> Search Results </h1>
+        <h1> Saved Books </h1>
         {props.saved.map((book) => {
           return (
             <SavedCard

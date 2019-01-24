@@ -4,8 +4,8 @@ import "./style.css";
 function Footer() {
   return (
 
-    <footer class="footer mt-auto py-3">
-      <div class="container">
+    <footer className="footer mt-auto py-3">
+      <div className="container">
         <span is="copyright" class="text-muted">&copy; Copyright 2019 Sue J.  Stevens</span>
       </div>
     </footer>
