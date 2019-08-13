@@ -22,12 +22,12 @@ function SavedCard(props) {
       </div>
       <div className="SavedOptions col-1">
         <a href={props.link} target="_blank">
-          <button className="ViewMore SavedOption">
-            View More
+          <button className="btn btn-secondary ViewMore SavedOption">
+            ..
           </button>
         </a>
-        <button className="RemoveSaved SavedOption" id={props.id} onClick={(event) => { props.deleteBook(event.target.id) }}>
-          Remove Book
+        <button className="btn btn-secondary RemoveSaved SavedOption" id={props.id} onClick={(event) => { props.deleteBook(event.target.id) }}>
+          x 
         </button>
       </div>
     </div>

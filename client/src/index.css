@@ -11,4 +11,26 @@
     padding: 0;
     margin: 0;
   }
-  
+  body,html {
+    height: 100%;
+    margin: 0;
+    background: lightblue;
+  }
+  .navbar {
+    background: lightslategray !important;
+  }
+  p {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  h1,h2,h3,h4 {
+
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    background: lightslategray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }

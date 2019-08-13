@@ -21,16 +21,16 @@ function ResultsCard(props) {
                 </p>
             </div>
             <p className="link">
-                   TEsting! {props.infoLink}
+                {props.infoLink}
                 </p>
             <div className="ResultOptions col-1">
                 <a href={props.link} target="_blank">
-                    <button className="ViewMore ResultOption">
-                        View More
+                    <button className="btn btn-secondary ViewMore ResultOption">
+                        ..
                     </button>
                 </a>
-                <button className="SaveResult ResultOption" id={props.id} onClick={(event) => props.saveBook(event)}>
-                    Save Book
+                <button className="btn btn-secondary SaveResult ResultOption" id={props.id} onClick={(event) => props.saveBook(event)}>
+                    Save
                 </button>
             </div>
         </div>

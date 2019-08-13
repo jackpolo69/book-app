@@ -6,7 +6,7 @@ function Footer() {
 
     <footer className="footer mt-auto py-3">
       <div className="container">
-        <span is="copyright" class="text-muted">&copy; Copyright 2019 Sue J.  Stevens</span>
+        <span is="copyright">&copy; created by Jack Polo</span>
       </div>
     </footer>
 
